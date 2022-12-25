@@ -1,0 +1,15 @@
+(rule
+ (targets Int63Compat.v)
+ (deps
+  Int63Compat.v.v811
+  Int63Compat.v.v812
+  Int63Compat.v.v813
+  Int63Compat.v.v814
+  Int63Compat.v.v815
+  Int63Compat.v.v816)
+ ; Due to a bug in the way Dune calls coqc we cannot do this for now we explicitly use the latest
+ ;(action (copy Int64Compat.v.v%{coq:version.major}%{coq:version.minor} Int63Compat.v))
+ (action (copy Int63Compat.v.v816 Int63Compat.v))
+ )
+
+(dirs :standard \ extraction)

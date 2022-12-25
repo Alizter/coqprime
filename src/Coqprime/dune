@@ -1,0 +1,50 @@
+(coq.theory
+ (name Coqprime)
+ (package coq-coqprime)
+ ; TODO: do this smarter
+ (modules
+  Tactic.Tactic
+  N.NatAux
+  N.ChineseRem
+  List.Iterator
+  List.ListAux
+  List.Permutation
+  List.UList
+  List.ZProgression
+  Z.Pmod
+  Z.ZCAux
+  Z.Zmod
+  Z.Ppow
+  Z.ZCmisc
+  Z.ZSum
+  PrimalityTest.Cyclic
+  PrimalityTest.EGroup
+  PrimalityTest.Euler
+  PrimalityTest.FGroup
+  PrimalityTest.IGroup
+  PrimalityTest.Lagrange
+  PrimalityTest.LucasLehmer
+  PrimalityTest.Pepin
+  PrimalityTest.PGroup
+  PrimalityTest.PocklingtonCertificat
+  PrimalityTest.Pocklington
+  PrimalityTest.Proth
+  PrimalityTest.Root
+  PrimalityTest.Zp
+  elliptic.GZnZ
+  elliptic.SMain
+  elliptic.ZEll
+  num.Bits
+  num.Int63Compat
+  num.Lucas
+  num.NEll
+  num.MEll
+  num.Mod_op
+  num.Pock
+  num.montgomery
+  num.W
+  examples.BasePrimes
+  examples.PocklingtonRefl)
+ (theories Bignums))
+
+(include_subdirs qualified)
